@@ -1,3 +1,4 @@
+require_relative "../lib/custom_download_strategy"
 # typed: false
 # frozen_string_literal: true
 
