@@ -9,17 +9,17 @@ class Mortar < Formula
   version "1.1.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.0/mortar-cli_1.1.0_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "d8e569aa5e6ce8158e29abc9a34c59548b4f3228c96dfcdb10a72caf6814ed0a"
+    if Hardware::CPU.arm?
+      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.0/mortar-cli_1.1.0_Darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "269ddda0b67cb9d4733cd837eb2e7a3529c7fae8dbd335a1443c0f195ac3f0ef"
 
       def install
         bin.install "mortar"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.0/mortar-cli_1.1.0_Darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "fcb6190efeeb74d7daaa1e6917764aa1fe827e217bc8b0e0bc816fd1c20d7296"
+    if Hardware::CPU.intel?
+      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.0/mortar-cli_1.1.0_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "b9b6becf1ece9fe249c53084783d3eb1a7ac241c093550f6cdcdbfea6f955cb6"
 
       def install
         bin.install "mortar"
@@ -30,7 +30,7 @@ class Mortar < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.0/mortar-cli_1.1.0_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "008d6c21a6b83d481105b7d146a5b18172136a42095f80a87d5f1580ad15c880"
+      sha256 "dc84aa1ccfdb2706d36ed91a301b58a77e255d5799eaa1e44e3ffd6ff699a609"
 
       def install
         bin.install "mortar"
@@ -38,7 +38,7 @@ class Mortar < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.0/mortar-cli_1.1.0_Linux_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "2992cd2747b5191dc8df9b620ee383050ac496726a4844969690a85c0e93d9c8"
+      sha256 "ac431bac0500461ad19deacf7ea90d04a6d6708b0f01fe4b829319f0e677a1d0"
 
       def install
         bin.install "mortar"
