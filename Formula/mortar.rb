@@ -6,20 +6,20 @@ require_relative "../lib/custom_download_strategy"
 class Mortar < Formula
   desc "Mortar - build and use gRPC API easy"
   homepage "https://github.com/bucketplace/mortar-cli"
-  version "1.1.7"
+  version "1.1.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.7/mortar-cli_1.1.7_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "5be5939199a3516b0d0a3f2eae8b9040d6dea157ac403030779b3c1e24d3697d"
+      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.8/mortar-cli_1.1.8_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "eb9d6d475537d05394b55c5cf22e6307721a495b87b377c99f7e6c5759fb0c23"
 
       def install
         bin.install "mortar"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.7/mortar-cli_1.1.7_Darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "585d51d474fddc2fafb9123e9b3f53584d79695ca8aea0fe0f6de17226cc3014"
+      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.8/mortar-cli_1.1.8_Darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "70db88cc4d61a484e7cfbe9b2e3257244f16009fd9b9033b22b2b93834dca3ad"
 
       def install
         bin.install "mortar"
@@ -28,17 +28,17 @@ class Mortar < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.7/mortar-cli_1.1.7_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "f60251081a45681b9d123f0080b92c7d3aef7b1744d4f562e47b6b89579310f4"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.8/mortar-cli_1.1.8_Linux_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "db5e99899621c02cb2c6c2965e897ada67225186926a8f429c846b3593fc647a"
 
       def install
         bin.install "mortar"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.7/mortar-cli_1.1.7_Linux_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "9495fe5e8663046e44f454b23b6f111a1cd64e4e949549006502691ef99ff8d0"
+    if Hardware::CPU.intel?
+      url "https://github.com/bucketplace/mortar-cli/releases/download/v1.1.8/mortar-cli_1.1.8_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "95fb4d62d8622768e0a768904be951a88f69f5672a03aeb9c1d7771e6c63ed1a"
 
       def install
         bin.install "mortar"
