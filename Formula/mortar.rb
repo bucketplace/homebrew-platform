@@ -5,11 +5,11 @@
 class Mortar < Formula
   desc "Mortar - build and deploy your applications easy as eating a piece of cake"
   homepage "https://github.com/bucketplace/mortar"
-  version "1.4.13"
+  version "1.4.12"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.13/mortar_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.12/mortar_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
       sha256 "0796d824f2cccad3748f240d04318e15f3d01875f74ce86dae23cf3be1956881"
 
       def install
@@ -17,7 +17,7 @@ class Mortar < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.13/mortar_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.12/mortar_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
       sha256 "3e1123681ab6a781c6767a5866a7c36385360096319159ae6d193db6ed0e6372"
 
       def install
@@ -28,7 +28,7 @@ class Mortar < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.13/mortar_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.12/mortar_Linux_arm64.tar.gz", using: CurlDownloadStrategy
       sha256 "20e7d3710ed2efdd92e85f242e58a3fe24f59ce19d58f4b3aaa8829150c09857"
 
       def install
@@ -36,7 +36,7 @@ class Mortar < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.13/mortar_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.12/mortar_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
       sha256 "442fe0224b6d20da8d44a72b495b7ada2736949a34464c8cbedf38eb453f7805"
 
       def install
