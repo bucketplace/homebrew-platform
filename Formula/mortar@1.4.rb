@@ -8,17 +8,17 @@ class MortarAT14 < Formula
   version "1.4.18"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.18/mortar_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "26a83d1383faca17997b4233b840ac3428ae54b4721f142f304737177a1c8431"
+    if Hardware::CPU.intel?
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.18/mortar_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "01b631d8204929f4a6eb80ccdbae5770c16f2409192f89bce1f1580562343b37"
 
       def install
         bin.install "mortar"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.18/mortar_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7535d6bb2e9489f99264fd28c77ee9469cdc2d97efeca3e8e3eeac654c0a56f3"
+    if Hardware::CPU.arm?
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.18/mortar_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "996fd09d2567b0235709d27c6896e426beef8bbc3411f2e1f6e20eb01ceac526"
 
       def install
         bin.install "mortar"
@@ -29,7 +29,7 @@ class MortarAT14 < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.18/mortar_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "48b851722fee038999ed5a2414087dd20f74c7f2c361c6e64e840f99d571892b"
+      sha256 "02059c15f46f7c578a557f1edf531ec6bbbc8be59937a3e4fe041a1d04377a52"
 
       def install
         bin.install "mortar"
@@ -37,7 +37,7 @@ class MortarAT14 < Formula
     end
     if Hardware::CPU.intel?
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/1.4.18/mortar_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "ebc9515ddeebc8552d2865b58d59eef044a10523cfeba945b13d27ee824b7ac2"
+      sha256 "cb22db2b703b5845b1769728c7597c79e2832eaba992bc73dcfae71fb6b55e94"
 
       def install
         bin.install "mortar"
