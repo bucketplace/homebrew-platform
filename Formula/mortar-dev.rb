@@ -1,11 +1,11 @@
 class MortarDev < Formula
   desc "Mortar - build and deploy your applications easy as eating a piece of cake"
   homepage "https://github.com/bucketplace/mortar"
-  version "0.0.1"
+  version "0.1.0"
   on_macos do
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar-dev/0.0.1/mortar-dev-darwin_arm64.tar.gz"
-      sha256 "414adb07fe6ac5bb2e96931245791fd04f5bf97ada5d247db904b2832d903e94"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar-dev/0.1.0/mortar-dev-darwin_arm64.tar.gz"
+      sha256 "894c581a8aabad4002e3718364168e6ea448e88d75f4f578f1a78a39dcb9e4c4"
       def install
         bin.install "mortar"
         prefix.install "version"
@@ -14,16 +14,16 @@ class MortarDev < Formula
   end
   on_linux do
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar-dev/0.0.1/mortar-dev-linux_amd64.tar.gz"
-      sha256 "370d98e594ab2a8f47e5e8285f85cd7c13c07bf5db18fff4f7e9435a44b6ed56"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar-dev/0.1.0/mortar-dev-linux_amd64.tar.gz"
+      sha256 "e70a66eeae1a0a5d582999f1ce8b64e78b75320ab47915be0b41f518c3799b69"
       def install
         bin.install "mortar"
         prefix.install "version"
       end
     end
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar-dev/0.0.1/mortar-dev-linux_arm64.tar.gz"
-      sha256 "b2036a7f8b48da765d7438990c09f54f486cf67a95a8456e20b11a5b1014c1bb"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar-dev/0.1.0/mortar-dev-linux_arm64.tar.gz"
+      sha256 "2a783c47ba39a8766875efec21df6783b013dba4a4586b7c61fb56f9f1fddd57"
       def install
         bin.install "mortar"
         prefix.install "version"
