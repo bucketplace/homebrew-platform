@@ -5,7 +5,7 @@ class MortarDev < Formula
   on_macos do
     on_arm do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar-dev/0.1.5/mortar-dev-darwin_arm64.tar.gz"
-      sha256 "045c43d3b0022da6b54e7e73d4a3b8c854dd620299f63cc70f316c828a870244"
+      sha256 "2590f968ce6e1077bd29b73f380c7cc9971687da33f5266fd654c7368d4b603f"
       def install
         bin.install "mortar"
         prefix.install "version"
@@ -15,7 +15,7 @@ class MortarDev < Formula
   on_linux do
     on_intel do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar-dev/0.1.5/mortar-dev-linux_amd64.tar.gz"
-      sha256 "c3fbe7e04585b68df7c187c004edcfa389cc3f8933a5939322427671f0c41882"
+      sha256 "af129bff34810e6e14550fffc1e7f5375f50af6d40388026e4f7b90d122f5b81"
       def install
         bin.install "mortar"
         prefix.install "version"
@@ -23,7 +23,7 @@ class MortarDev < Formula
     end
     on_arm do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar-dev/0.1.5/mortar-dev-linux_arm64.tar.gz"
-      sha256 "5ad8ad6c1db409d60645a5094a5f5dc596a4c86d378ddbba8fc7275e0e680cdb"
+      sha256 "04c56a7a536f9f2c73d1421514eac291296523ca83509ad549e50dcde2f5d312"
       def install
         bin.install "mortar"
         prefix.install "version"
