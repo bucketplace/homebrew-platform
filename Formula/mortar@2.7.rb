@@ -1,4 +1,4 @@
-class Mortar < Formula
+class MortarAT27 < Formula
   desc "Mortar - build and deploy your applications easy as eating a piece of cake"
   homepage "https://github.com/bucketplace/mortar"
   version "2.7.1"
