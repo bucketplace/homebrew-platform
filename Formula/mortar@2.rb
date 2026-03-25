@@ -5,15 +5,15 @@
 class MortarAT2 < Formula
   desc "Mortar - build and deploy your applications easy as eating a piece of cake"
   homepage "https://github.com/bucketplace/mortar"
-  version "2.5.23"
+  version "2.5.24"
 
   depends_on "awscli"
   depends_on "kubectl"
 
   on_macos do
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/2.5.23/mortar_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7f2fd30d7fa36fac505740bc06a1aed1d285f0060873622f91c5e3dad4c5bc39"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/2.5.24/mortar_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "9f20fc7d2361eac6cad1c773d54dd3f453d3f12a3530619ca5779f79baefc61d"
 
       def install
         bin.install "mortar"
@@ -21,8 +21,8 @@ class MortarAT2 < Formula
       end
     end
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/2.5.23/mortar_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "4afc01f1214bd2aac941b06c1fcfd1d6cd82ffc286930c82fdecf23b04bba495"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/2.5.24/mortar_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "8144fc5e7ebcc08d83efcc341cbde3e2549a61fcae13be34b6788783a0abe2c1"
 
       def install
         bin.install "mortar"
@@ -34,8 +34,8 @@ class MortarAT2 < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/2.5.23/mortar_linux_amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "461b2223bc59d98cbbdfc3048c8163b54879b050abc1450bf0695b68845a757e"
+        url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/2.5.24/mortar_linux_amd64.tar.gz", using: CurlDownloadStrategy
+        sha256 "f7a43d91244e55c7c1bc8b2bfb43f560d262a8acd3b8322d3863ece09c49ed21"
 
         def install
           bin.install "mortar"
@@ -45,8 +45,8 @@ class MortarAT2 < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/2.5.23/mortar_linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "b3235f5d0e12f11ceda99eae84fe3df57f2069a07cd14f016c0b17ce53139730"
+        url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/2.5.24/mortar_linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "321f4230148a2f151fc0498748634c76046026cf0f604d88ae72d8bc859fb1d9"
 
         def install
           bin.install "mortar"
