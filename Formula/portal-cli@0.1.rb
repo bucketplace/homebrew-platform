@@ -6,7 +6,7 @@ class PortalCliAT01 < Formula
   on_macos do
     on_arm do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.3/portal-cli_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "c89c55219c45fbd9007c8f3ea5f17bdb8ab53aa7689671570511dd235344c5e7"
+      sha256 "a478463153653118a4fff1c61d173ba819d56c4834332613059bcde69ce823f6"
 
       def install
         bin.install "portal"
@@ -14,7 +14,7 @@ class PortalCliAT01 < Formula
     end
     on_intel do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.3/portal-cli_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "bd9d5b24290eaf50101230ac55f5cc456f782e061480a8dde411b2872b235281"
+      sha256 "9fded09c9a952944f4e9f2eca45fbbdae51eb67c4125fff2f64c948a98c2b369"
 
       def install
         bin.install "portal"
@@ -25,7 +25,7 @@ class PortalCliAT01 < Formula
   on_linux do
     on_intel do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.3/portal-cli_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "3ef076d438bb87bfe7a3a1e03795cf941025b10072fbf9d5f57c959c2aa9ebf2"
+      sha256 "a467cfe7ca18e4a51a588fd2c0461191b0b0ba229d7c377f80f539848ad039d9"
 
       def install
         bin.install "portal"
@@ -33,7 +33,7 @@ class PortalCliAT01 < Formula
     end
     on_arm do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.3/portal-cli_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "b0fa4409044ad586116b9b34cfd7bbd6619b99f1cbf1c45e3b6f8a0a0ad4ab2f"
+      sha256 "793d0b00f93b3723af6b752f1f5b313f48ebd5dea6bc17955e19c2ee778f488f"
 
       def install
         bin.install "portal"
