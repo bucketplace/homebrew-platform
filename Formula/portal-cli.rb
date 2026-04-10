@@ -6,18 +6,18 @@ class PortalCli < Formula
   on_macos do
     on_arm do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.2-9/portal-cli_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "08f9fa66877fa26be39ea467aa9a4210925fd82308200ed1801554c02af884b3"
+      sha256 "8a72d55e3e620dfd5e770afb9acd8db51436ce07e1a406ffdf4823c7a9256afb"
 
       def install
-        bin.install "portal.exe"
+        bin.install "portal"
       end
     end
     on_intel do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.2-9/portal-cli_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "5e90118089da139ef0f3b96dd39ebfd7f218713c8754edcb86faf606f8e5da28"
+      sha256 "23439a6589cc868d4e46c0cfa7f531f5eddc59dcbef103429b5570c1cc3dafc3"
 
       def install
-        bin.install "portal.exe"
+        bin.install "portal"
       end
     end
   end
@@ -25,18 +25,18 @@ class PortalCli < Formula
   on_linux do
     on_intel do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.2-9/portal-cli_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "335dd6d2437fb476b1cbbb45ec61ced5111ef2350aecfa510fb6a6cc8e51160b"
+      sha256 "53069fc62145146566d4a28871ab608cfa0574acbbbcbd3979d065e5fda4a41c"
 
       def install
-        bin.install "portal.exe"
+        bin.install "portal"
       end
     end
     on_arm do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.2-9/portal-cli_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "153f4d0b2030fb7c20ec82fd6802c9b9da0b083c3f7fda6cf1188d0859c15a25"
+      sha256 "a8b52fbd8cc8931a7eeb57979beed33707d28cd3aee2947abc9c86273e52f815"
 
       def install
-        bin.install "portal.exe"
+        bin.install "portal"
       end
     end
   end
