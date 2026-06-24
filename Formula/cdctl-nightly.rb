@@ -1,22 +1,22 @@
 class CdctlNightly < Formula
   desc "CD pipeline CLI tool"
   homepage "https://github.com/bucketplace"
-  version "1.0.1-14"
+  version "1.0.1-15"
   depends_on "awscli"
   depends_on "jq"
 
   on_macos do
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.0.1-14/cdctl_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "1d249e05d50165ad832db64b1f8fdaea341728cd8a436f4be7b1205131705976"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.0.1-15/cdctl_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "019e03cc7d128a4a7606fd87fa3178567c3d3dd149e3d3f957f048182e4ca73f"
 
       def install
         bin.install "cdctl"
       end
     end
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.0.1-14/cdctl_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "172221da5854dd4cbb195270590be5c42ebdb269c1536ad84e8d26ca1443f509"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.0.1-15/cdctl_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "28008b86f283254ea764019b84b1b77c71b38ed6b2249a5716f02884a429d672"
 
       def install
         bin.install "cdctl"
@@ -26,8 +26,8 @@ class CdctlNightly < Formula
 
   on_linux do
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.0.1-14/cdctl_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "8afd4f307877b2cc887ddea74a17e46d57657577cf63f4f28f65869a90b9b075"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.0.1-15/cdctl_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "8715d59a80458d4ac558d34cc989d6e50019aaf8a70384fee8d63827fd164dca"
 
       def install
         bin.install "cdctl"
