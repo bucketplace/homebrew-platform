@@ -1,20 +1,20 @@
 class OrcheckNightly < Formula
   desc "OpenRouter Usage check CLI"
   homepage "https://github.com/bucketplace"
-  version "0.0.2-4"
+  version "0.0.2-5"
 
   on_macos do
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/orcheck/0.0.2-4/orcheck_0.0.2-4_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "78e7557aba90a27db5d30a6d13353df7c61d735d0fef76ba2771ad5257efd981"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/orcheck/0.0.2-5/orcheck_0.0.2-5_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "813938005e9eb682c9df98286c9e55ec154e4296cc61fcfb52a3893c0417f8af"
 
       def install
         bin.install "orcheck"
       end
     end
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/orcheck/0.0.2-4/orcheck_0.0.2-4_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "d1a651de015d7ce59386a9ccf7b8cb18dd53be924c821dd7a16cf2b03bd8ec1d"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/orcheck/0.0.2-5/orcheck_0.0.2-5_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "4abe65c54ed98ab5b3dd617cc8a087926dade54696df9047bb16a4eb1552d639"
 
       def install
         bin.install "orcheck"
@@ -24,16 +24,16 @@ class OrcheckNightly < Formula
 
   on_linux do
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/orcheck/0.0.2-4/orcheck_0.0.2-4_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "2d54f36371edff32480574820aa57af498044424bf36cbdae7b2fee697962aa8"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/orcheck/0.0.2-5/orcheck_0.0.2-5_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "748a2eec23866ea0b27fba1107c4a9def757f3b3083c63a71ed7d1b94ccd0b33"
 
       def install
         bin.install "orcheck"
       end
     end
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/orcheck/0.0.2-4/orcheck_0.0.2-4_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e8fea3c03b07cdaa1301e5e6865e705cdf181fee6ad238d8a58d6c4fc6e83e5b"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/orcheck/0.0.2-5/orcheck_0.0.2-5_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "9a114b7c88944a299eb1c3aa4e7b067768211d20d8e075b2839477fbc7877979"
 
       def install
         bin.install "orcheck"
