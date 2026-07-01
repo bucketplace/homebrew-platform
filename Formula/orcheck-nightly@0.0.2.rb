@@ -1,4 +1,4 @@
-class OrcheckNightly < Formula
+class OrcheckNightlyAT002 < Formula
   desc "OpenRouter Usage check CLI"
   homepage "https://github.com/bucketplace"
   version "0.0.2-4"
