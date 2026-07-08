@@ -1,4 +1,4 @@
-class Ok9sNightly < Formula
+class Ok9sNightlyAT001 < Formula
   desc "k9s helper for ohouse member"
   homepage "https://github.com/bucketplace"
   version "0.0.1-3"
