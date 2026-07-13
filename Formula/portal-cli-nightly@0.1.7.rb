@@ -1,4 +1,4 @@
-class PortalCliNightly < Formula
+class PortalCliNightlyAT017 < Formula
   desc "Portal CLI - dev-portal command-line tool for humans and AI agents"
   homepage "https://github.com/bucketplace"
   version "0.1.7-14"
