@@ -1,4 +1,4 @@
-class CdctlNightly < Formula
+class CdctlNightlyAT105 < Formula
   desc "CD pipeline CLI tool"
   homepage "https://github.com/bucketplace"
   version "1.0.5-30"
