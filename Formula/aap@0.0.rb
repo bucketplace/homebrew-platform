@@ -1,21 +1,21 @@
 class AapAT00 < Formula
   desc "Agentic AI Platform CLI"
   homepage "https://github.com/bucketplace"
-  version "0.0.1"
+  version "0.0.2"
   depends_on "bucketplace/platform/mortar"
 
   on_macos do
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/aap/0.0.1/aap_0.0.1_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "f7952e07008c721666ee37da19cf431a8c255f9fb76ec45bdbbf8cc98f6294b4"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/aap/0.0.2/aap_0.0.2_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d026c561ff7f7ae08919a839d8cdb2985f777871969a478a2589e53c3e1514a3"
 
       def install
         bin.install "aap"
       end
     end
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/aap/0.0.1/aap_0.0.1_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "244b2ff76328409866e095c4d969316a63bf98eb2ad4e369da61492912b0378b"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/aap/0.0.2/aap_0.0.2_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "2897d5f0378251a53ff8610d4b67603190975695328dc83fbd953803f33987bf"
 
       def install
         bin.install "aap"
@@ -25,16 +25,16 @@ class AapAT00 < Formula
 
   on_linux do
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/aap/0.0.1/aap_0.0.1_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "730ff3595eded6c5248064ed710439d548fa024425a8cf200a4b9cc03d1d0a5b"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/aap/0.0.2/aap_0.0.2_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "cf2e90bfe64b740656f480418110d0c6f0fe175c05c4deafe4278578fda2316c"
 
       def install
         bin.install "aap"
       end
     end
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/aap/0.0.1/aap_0.0.1_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7a71b1d6d0bf30838b9cbfb92947daf68260000e0e61902abc5998128f2242a7"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/aap/0.0.2/aap_0.0.2_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "ec43ca6792a70a5703123d2adc3fbfefc933fab06633dc00f22d9b2abdff5f89"
 
       def install
         bin.install "aap"
