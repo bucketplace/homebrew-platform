@@ -1,4 +1,4 @@
-class AapNightly < Formula
+class AapNightlyAT002 < Formula
   desc "Agentic AI Platform CLI"
   homepage "https://github.com/bucketplace"
   version "0.0.2-3"
