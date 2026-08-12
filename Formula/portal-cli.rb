@@ -1,20 +1,20 @@
 class PortalCli < Formula
   desc "Portal CLI - dev-portal command-line tool for humans and AI agents"
   homepage "https://github.com/bucketplace"
-  version "0.1.23"
+  version "0.1.24"
 
   on_macos do
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.23/portal-cli_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "53c6fbd1715f3eaa47679f8f137e7d2cfe6293719fda9e78cc1116494e3d87e8"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.24/portal-cli_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "a705054613fdd613be466c34fea7e34f8a10bb11b90162082a02ddbf61015708"
 
       def install
         bin.install "portal"
       end
     end
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.23/portal-cli_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e5b7f0a79343baa4e643624ea475fc4b11e67487eb766a82da63bf607e28c30c"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.24/portal-cli_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "0588805a06640241caa291da4b27e58cf922d103243cc4b03e8e52b4114dffa9"
 
       def install
         bin.install "portal"
