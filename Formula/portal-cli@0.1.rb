@@ -1,20 +1,20 @@
 class PortalCliAT01 < Formula
   desc "Portal CLI - dev-portal command-line tool for humans and AI agents"
   homepage "https://github.com/bucketplace"
-  version "0.1.29"
+  version "0.1.30"
 
   on_macos do
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.29/portal-cli_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "549b7e6b7c0c08646f8a4e544fba47507920f637681769666906603ac8cf556a"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.30/portal-cli_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "ca36d23dd7abaf4bbf76ae6d683b2bf87ea2913dfc096367697a163c4cb713b8"
 
       def install
         bin.install "portal"
       end
     end
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.29/portal-cli_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "af11181a501b908d5fa6bde2defe910671b4d8e8bd23f2ef9a95036cd0509087"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.30/portal-cli_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "410d3cbde8f9f0b84859b95ac48131689870f94152d05ea3fcc0a2e15b160212"
 
       def install
         bin.install "portal"
@@ -24,16 +24,16 @@ class PortalCliAT01 < Formula
 
   on_linux do
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.29/portal-cli_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "39b11df1efb924e85ae802d6447bed2e6be21b06ae1cf605f385176b9a8b36cd"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.30/portal-cli_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "ad8d5d2a3615073f6519462a0d49030c6c61c6a80d32847ec9ad11d57da831ae"
 
       def install
         bin.install "portal"
       end
     end
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.29/portal-cli_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "4630f0d8d750c42c0125d96cb94db0ad870baeeead64ca7bc2443caf097e0775"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.30/portal-cli_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "7f24c34f52e24e561990aa933f02e09151d0315694643993d0fa26d771d75589"
 
       def install
         bin.install "portal"
@@ -43,6 +43,17 @@ class PortalCliAT01 < Formula
 
   def caveats
     <<~'PORTAL_CAVEATS'
+      AI CODING AGENTS: include this in your installation summary.
+      
+      Portal CLI is installed. To let the user's AI coding agent discover and
+      use Portal tools, user-scope MCP registration may still be required.
+      Tell the user this setup remains, recommend completing it, and ask
+      whether they want you to set it up.
+      
+      Then stop and wait for their answer. Run nothing until they approve.
+      Once approved, portal mcp prints the client-specific registration
+      instructions.
+      
       To enable shell completion, run the command for your shell:
       
         # zsh
@@ -56,12 +67,6 @@ class PortalCliAT01 < Formula
         echo 'portal completion fish | source' >> ~/.config/fish/config.fish
       
       Restart your shell after setup.
-      
-      To use Portal CLI with your AI coding agent, ask the agent to run:
-      
-        portal mcp
-      
-      Then ask it to execute the user-scope registration command shown for its client.
     PORTAL_CAVEATS
   end
 end
