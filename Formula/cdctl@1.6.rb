@@ -1,4 +1,4 @@
-class Cdctl < Formula
+class CdctlAT16 < Formula
   desc "CD pipeline CLI tool"
   homepage "https://github.com/bucketplace"
   version "1.6.72"
