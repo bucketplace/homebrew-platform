@@ -2,10 +2,14 @@ class MortarAT26 < Formula
   desc "Mortar - build and deploy your applications easy as eating a piece of cake"
   homepage "https://github.com/bucketplace/mortar"
   version "2.6.6"
+
+  # Keep a base download so Homebrew can load metadata on unsupported systems.
+  url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/2.6.6/mortar_darwin_arm64.tar.gz"
+  sha256 "0570c8d523d58cf126ec0445dab5de8214d28f15ed14c12febda2a095233dd4f"
   on_macos do
+    depends_on arch: :arm64
+
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/platform/mortar/2.6.6/mortar_darwin_arm64.tar.gz"
-      sha256 "0570c8d523d58cf126ec0445dab5de8214d28f15ed14c12febda2a095233dd4f"
       def install
         bin.install "mortar"
         prefix.install "version"

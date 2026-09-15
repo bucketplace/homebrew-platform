@@ -2,14 +2,15 @@ class CdctlNightlyAT101 < Formula
   desc "CD pipeline CLI tool"
   homepage "https://github.com/bucketplace"
   version "1.0.1-19"
+
+  # Keep a base download so Homebrew can load metadata on unsupported systems.
+  url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.0.1-19/cdctl_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+  sha256 "7d9c16e0d448fcd5015b084d9cd280c33396f72ecbd30e170e0548b9d65cfa16"
   depends_on "awscli"
   depends_on "jq"
 
   on_macos do
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.0.1-19/cdctl_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7d9c16e0d448fcd5015b084d9cd280c33396f72ecbd30e170e0548b9d65cfa16"
-
       def install
         bin.install "cdctl"
       end
@@ -25,6 +26,8 @@ class CdctlNightlyAT101 < Formula
   end
 
   on_linux do
+    depends_on arch: :x86_64
+
     on_intel do
       url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.0.1-19/cdctl_linux_amd64.tar.gz", using: CurlDownloadStrategy
       sha256 "fe817da09b7c17ac7ff3822c94ab68c56ca98f99c553023e3ca89e444bb910a4"
