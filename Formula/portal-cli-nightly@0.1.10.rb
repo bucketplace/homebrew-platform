@@ -3,11 +3,13 @@ class PortalCliNightlyAT0110 < Formula
   homepage "https://github.com/bucketplace"
   version "0.1.10-17"
 
+  # Keep a base download so Homebrew can load metadata on unsupported systems.
+  url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.10-17/portal-cli-nightly_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+  sha256 "fe14f3125ab944c0a77280467aca6068f0ee556645a528fd6745a0cc9f6edca9"
+  depends_on :macos
+
   on_macos do
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.10-17/portal-cli-nightly_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "fe14f3125ab944c0a77280467aca6068f0ee556645a528fd6745a0cc9f6edca9"
-
       def install
         bin.install "portal"
       end
