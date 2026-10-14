@@ -1,20 +1,20 @@
 class PortalCliAT0 < Formula
   desc "Portal CLI - dev-portal command-line tool for humans and AI agents"
   homepage "https://github.com/bucketplace"
-  version "0.1.56"
+  version "0.1.57"
 
   on_macos do
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.56/portal-cli_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "63135b30a0b0891bc570868243180029ac30d2ae2bd52e8c1ae24fca3aae7a53"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.57/portal-cli_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "f28fcc4afb66052422f154d6e702aba465bb1da086c53bb632e1a3f5a0031cf9"
 
       def install
         bin.install "portal"
       end
     end
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.56/portal-cli_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "fa1ad25f8f4d3443862a6783867f9916be8bb67cec18cd5c0d07c2e535594ed5"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.57/portal-cli_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "a7e95df3ba41a5733d92842e84688b7b0de0e6cdc455465a40ab60b3c11b4a91"
 
       def install
         bin.install "portal"
@@ -24,16 +24,16 @@ class PortalCliAT0 < Formula
 
   on_linux do
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.56/portal-cli_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "c844586f3f8b8386fc65d38304f06db220e5015ee6d5f92c1e2706f5bf5d4af9"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.57/portal-cli_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "11970f6f9a895dad9690a346338d073ac7ca2bef5a1e5e43ab47cbed55e753fd"
 
       def install
         bin.install "portal"
       end
     end
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.56/portal-cli_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "89d1c79381e8e3503fa40875d357df2912e7bf75d179d4f87c1490532fcdf98e"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/portal-cli/0.1.57/portal-cli_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "48b0bc11c2a7d931694e497b0d97303f4f929e37a2136b81b22f8ddbfce7773b"
 
       def install
         bin.install "portal"
