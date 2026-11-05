@@ -1,22 +1,22 @@
 class CdctlNightly < Formula
   desc "CD pipeline CLI tool"
   homepage "https://github.com/bucketplace"
-  version "1.6.81-51"
+  version "1.6.82-52"
   depends_on "awscli"
   depends_on "jq"
 
   on_macos do
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.6.81-51/cdctl_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "ca2bd4c61acf0bb40b010fa3af5013dfa4fdc281adf6948f9c7e43486c967af2"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.6.82-52/cdctl_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "3276cabdcf0776dbe7d125959a19afba54858714c7ebf25cec81390fe52ff58d"
 
       def install
         bin.install "cdctl"
       end
     end
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.6.81-51/cdctl_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "3c1bc7fa68aef3f0f107f6e787d31d194f0cff9696a0fd0e38ef2ecdc5b8355d"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.6.82-52/cdctl_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "3d4109e8f5eed793f4ce43f8fa5c1eed97ae6da55aaed092627406c6b8cddc04"
 
       def install
         bin.install "cdctl"
@@ -26,16 +26,16 @@ class CdctlNightly < Formula
 
   on_linux do
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.6.81-51/cdctl_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "8352911a3cb4e3fe5432568eb183e1a2ffd4e2bcffa397c9484b56d8e56c891d"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.6.82-52/cdctl_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "4fed4767c68444c938ba2adcbfbccaef21c545a8674387a36a1e96a7bd273a5b"
 
       def install
         bin.install "cdctl"
       end
     end
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.6.81-51/cdctl_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "f91b010c562695f23effe5695f5f57c966d430505288a3b4450864c7d069e213"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/cdctl/1.6.82-52/cdctl_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "f9170ebcebace6a6701f6ae72678f59b044ade11c9e9ab781772f287243fbd2c"
 
       def install
         bin.install "cdctl"
