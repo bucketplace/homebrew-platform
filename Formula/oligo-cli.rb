@@ -1,20 +1,20 @@
 class OligoCli < Formula
   desc "O!Ligo CLI - open O!Ligo apps on the latest harness"
   homepage "https://github.com/bucketplace"
-  version "0.1.20"
+  version "0.1.21"
 
   on_macos do
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/oligo-cli/0.1.20/oligo-cli_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "c4626a594e8f5b4a82d0d1dda69b033f126338b24276e6cb4dd09ef00a0957dc"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/oligo-cli/0.1.21/oligo-cli_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d50b6e2f56900a50b2cf08fd04341bb50bfb19f936bc70198a5d48b733be25f7"
 
       def install
         bin.install "oligo"
       end
     end
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/oligo-cli/0.1.20/oligo-cli_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "5c2183b991b38ade1a5662a4f36cfb25c63b57964879bbd966af05f41fac7f1a"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/oligo-cli/0.1.21/oligo-cli_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "9250f7685e9929de4895ce5177d6dcbeaa1fdd4e0df9f07fc8a21ff0facbf96e"
 
       def install
         bin.install "oligo"
@@ -24,16 +24,16 @@ class OligoCli < Formula
 
   on_linux do
     on_intel do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/oligo-cli/0.1.20/oligo-cli_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "bab82fc28fa7f0c9deb439c17931f481aa44d695803bda418887a4817935c3cf"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/oligo-cli/0.1.21/oligo-cli_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "709e2d42e3d3102728b1b24056da3a5dff0c32266fc147f7590c8ab21ae78cdb"
 
       def install
         bin.install "oligo"
       end
     end
     on_arm do
-      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/oligo-cli/0.1.20/oligo-cli_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "2da250ec1a1ef3f064004648ed080b5c984b193e43c06fcbe42d069b3cc28b8c"
+      url "https://nexus.co-workerhou.se/repository/raw-tool-releases/homebrew/cli/oligo-cli/0.1.21/oligo-cli_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "e2098322a3ee88d3fbdc47b2b1a182fde9e375598bf282ddeb18b8f8685295e9"
 
       def install
         bin.install "oligo"
